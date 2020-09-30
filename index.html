@@ -19,7 +19,8 @@
     <header class="nav"> 
      <div class="container"> 
       <div class="nav-left"> 
-       AI文章伪原创
+        <h1 class="title is-info">AI文章伪原创</h1> 
+        <h2 class="subtitle is-info">文本模式V1.0.0 </h2> 
       </div> 
      </div> 
     </header> 
@@ -28,20 +29,24 @@
    <div class="hero-body"> 
     <div class="container"> 
      <div class="columns"> 
-
       <div class="column is-10"> 
-       <h1 class="title is-info">AI文章伪原创</h1> 
-       <h2 class="subtitle is-info">文本模式V1.0.0 </h2> 
        <div class="field is-horizontal is-info"> 
-        <div class="field-body is-info"> 
+        <div class="field-body is-info" style="margin-right: 1rem;"> 
          <div class="field"> 
           <div class="control"> 
            <textarea class="textarea" placeholder="以支持5000+个汉字伪原创，增加关键词锁定，如有需要请在下面输入要锁定的关键词" rows="12" id="content" autofocus=""></textarea> 
           </div> 
          </div> 
         </div> 
+        <div class="field-body is-info"> 
+          <div class="field"> 
+            <div class="control"> 
+            <textarea class="textarea" readonly placeholder="每篇文章需要3-4秒。" rows="12" id = "reply" autofocus=""></textarea> 
+            </div> 
+          </div> 
+        </div> 
        </div> 
-	          <div class="field is-grouped is-grouped-multiline"> 
+	     <div class="field is-grouped is-grouped-multiline"> 
 	   <span class="tag">您可输入</span> 
 	   <div class="control"> 
          <div class="tags has-addons"> 
@@ -72,19 +77,13 @@
 	</div>
 
 	
-       <div class="field is-grouped is-grouped-right"> 
+       <div class="field is-grouped is-grouped-right" style="display: inline-flex;"> 
 
         <p class="control"> <input class="button is-primary" id="button" type="button" onclick="answers()" value=" 进行AI伪原创 "></p> 
         <p class="control"> <a class="button is-light" id="reset" type="reset" value="重新输入" name="reset" onclick="clearBox();"> 重新输入 </a> </p> 
        </div> 
 
-		<div class="field-body is-info"> 
-         <div class="field"> 
-          <div class="control"> 
-           <textarea class="textarea" readonly placeholder="每篇文章需要3-4秒。" rows="12" id = "reply" autofocus=""></textarea> 
-          </div> 
-         </div> 
-        </div> 
+		
 
       </div> 
       <div class="column is-4"> 
