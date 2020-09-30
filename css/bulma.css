@@ -2729,7 +2729,7 @@ a.box:active {
 }
 
 .textarea[rows] {
-  height: unset;
+  height: 30rem;
 }
 
 .checkbox,
@@ -9498,6 +9498,6 @@ label.panel-block:hover {
 
 .footer {
   background-color: whitesmoke;
-  padding: 3rem 1.5rem 6rem;
+  padding: 0.5rem 1rem 0.5rem;
 }
 /*# sourceMappingURL=bulma.css.map */
