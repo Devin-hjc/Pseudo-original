@@ -53,7 +53,7 @@ function answers() {
 
 	var content = $("#content").val();
 	var url="api.php?key="+ $('#tagsinputval').val();
-	$.post(url,{info:content},function(result){
+	$.post(url,{info:content,key:$('#tagsinputval').val()},function(result){
 		$("#reply").html(result);
 	});
 }

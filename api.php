@@ -36,11 +36,12 @@ class article
 		$text=str_replace(array("\r\n","\n","\r"),'[h]',$this->source); 
 		$text= $this->keyword_lock($text);
 		$text= $this->keyword_unlock($this->wyc($text));
+		print_r($this->keyword);
 		
 		return str_replace('[h]',PHP_EOL,$text); 
 	}
 
-	//关键词锁定
+	//关键词锁定  原理：替换成[kn],翻译后再替换回来
 	public function keyword_lock($content='')
 	{
 
@@ -84,7 +85,7 @@ class article
 			$zh_en=$this->translate($info,'zh-CN','EN');
 			$wyc=$this->translate($zh_en,'EN','zh-CN');
 		}else{
-			$wyc="超过字数限制，QQ群：200653131";//92行设置的字数
+			$wyc="超过字数限制";//92行设置的字数
 		}
 		/* 
 		
